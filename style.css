@@ -1525,9 +1525,12 @@ footer > p {
     h1 {
     font-size: 2.5rem;
 }
+header {
+    height: 100vh;
+}
    .welcome {
-        top: 75%;
-        transform: translateY(-50%, -75%);
+        top: 90%;
+        transform: translateY(-50%, -90%);
     }
         .section1 h2 {
     font-size: 2rem;
