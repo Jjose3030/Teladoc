@@ -979,13 +979,13 @@ div.copy {
 
 @media (max-width: 1300px) {
     header {
-        height: 700px;
+        height: 690px;
     }
        .welcome {
         width: 100%;
-        top: 70%;
+        top: 87%;
         left: 50%;
-        transform: translate(-50%, -70%);
+        transform: translate(-50%, -87%);
         gap: 15px;
     }
     .cont-child1, .cont-child2, .cont-child3, .cont-child4, .child5, .cont-child7, .cont-child8 {
@@ -1020,11 +1020,14 @@ h1 {
 }
 }
 @media (max-width: 1210px) {
+     header {
+        height: 680px;
+    }
      .welcome {
         width: 100%;
-        top: 70%;
+        top: 85%;
         left: 50%;
-        transform: translate(-50%, -70%);
+        transform: translate(-50%, -85%);
         gap: 15px;
     }
     .section1 {
@@ -1056,7 +1059,7 @@ h1 {
     margin-block: 10px;
 }
 .item1 h2, .item2 h2, .item3 h2, .grid-flex h2, .item7 h2, .item8 h2 {
-     
+     font-size: 3rem;
     margin-block: 3px;
 }
 .section3 {
@@ -1109,7 +1112,30 @@ h1 {
     grid-row: 2;
 }
 }
-@media (max-width: 1025px) {
+@media (max-width: 1111px) {
+      header {
+        height: 690px;
+    }
+        .welcome {
+        width: 100%;
+        top: 75%;
+        left: 50%;
+
+        transform: translate(-50%, -75%);
+        gap: 15px;
+    }
+}
+@media (max-width: 1024px) {
+      header {
+        height: 600px;
+    }
+       .welcome {
+        width: 100%;
+        top: 500%;
+        left: 50%;
+        transform: translate(-50%, -500%);
+        gap: 15px;
+    }
     nav {
         position: fixed;
         width: 99%;
@@ -1236,19 +1262,16 @@ div.copy {
     width: 190px;
 }
 .item1 h2, .item2 h2, .item3 h2, .grid-flex h2, .item7 h2, .item8 h2 {
-     font-size: clamp(20px, 1.5vw, 20px);
+     font-size: 1.5rem;
 }
  .item1 p, .item2 p, .item3 p, .grid-flex p, .item7 p, .item8 p, .item9 p {
-        font-size: clamp(13px, 1.2vw, 15px);
+        font-size: 20px;
 }
 .item1, .item2 , .item3, .grid-flex , .item7 , .item8 {
         padding: 10px;   
     }
 }
 @media (max-width: 930px) {
-    .grid-cont p {
-        font-size: 14px;
-    }
     
     .item1 img, .item9 img{
     width: 170px;
@@ -1256,6 +1279,9 @@ div.copy {
 
 }
 @media (max-width: 890px) {
+      header {
+        height: 680px;
+    }
        .welcome {
         width: 100%;
         top: 55%;
@@ -1329,8 +1355,8 @@ div.copy {
 }
 @media (max-width: 770px) {
       .welcome {
-        top: 50%;
-        transform: translate(-50%, -50%);
+        top: 70%;
+        transform: translate(-50%, -70%);
     }
 .item5 img  {
     width: 160px;
@@ -1479,14 +1505,23 @@ footer > p {
 }
 @media (max-width: 720px) {
     .item1 h2, .item2 h2, .item3 h2, .grid-flex h2, .item7 h2, .item8 h2 {
-     font-size: clamp(10px, 1vw, 15px);
+     font-size: 2rem;
     margin-block: 3px;
 }
  .item1 p, .item2 p, .item3 p, .grid-flex p, .item7 p, .item8 p, .item9 p {
-        font-size: clamp(9px, 1vw, 10px);
+        font-size: 20px;
 }
 }
-@media (max-width: 530px) {
+@media (max-width:530px) {
+         .welcome {
+        width: 100%;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -95%);
+        gap: 15px;
+    }
+}
+@media (max-width: 430px) {
     h1 {
     font-size: 2.5rem;
 }
