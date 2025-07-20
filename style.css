@@ -363,7 +363,8 @@ h1 {
     color: var(--teladoc-bg-light);
 }
 .but2 {
-    padding: 15px 25px;
+    padding: 10px 25px;
+    width: 200px;
     border-radius: 30px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -744,6 +745,17 @@ mark {
     position: relative;
     border-radius: 40px;
     overflow: hidden;
+    position: relative;
+}
+.story-cards::after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+     background-image: linear-gradient(to right, rgba(2,2,2, 0.5));
+    z-index: 0;
+    left: 0;
+    top: 0;
 }
 .story-cards img {
     width: 100%;
@@ -762,6 +774,7 @@ mark {
     left: 50%;
     color: var(--teladoc-bg-light);
     transform: translate(-50%, -75%);
+    z-index: 2;
 }
 .tag h3 {
     font-size: 2.5rem;
@@ -978,6 +991,23 @@ div.copy {
 .media-apps img {
     width: 150px;
 }
+.book {
+    background-color: var(--teladoc-text);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 333;
+}
+.book i {
+    color: var(--teladoc-bg-light);
+    font-size: 22px;
+}
 
 @media (max-width: 1300px) {
     header {
@@ -1154,6 +1184,9 @@ h1 {
     }
     #bars, .logo-cont, .log {
         width: 50%;
+    }
+    .book {
+        display: none;
     }
     ul, .but1 {
         display: none;
@@ -1572,10 +1605,20 @@ header {
 .main-cards > .cards:hover img {
     transform: scale(1);
 }
+.story-cards:hover img {
+    scale: 1;
+}
     .item1 h2, .item2 h2, .item3 h2, .grid-flex h2, .item7 h2, .item8 h2 {
      font-size: clamp(20px, 2vw, 25px);
 }
  .item1 p, .item2 p, .item3 p, .grid-flex p, .item7 p, .item8 p, .item9 p {
         font-size: clamp(15px, 2vw, 18px);
+}
+.section2 {
+    margin-top: 5px;
+    padding: 15px;
+}
+.section3 {
+    margin-inline: 15px;
 }
 }
