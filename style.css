@@ -1533,6 +1533,9 @@ footer > p {
     font-size: 2rem;
     width: 100%;
 }
+.log1 i {
+    display: none;
+}
 .section3 h2 {
     font-size: 2.5rem;
     padding-inline: 30px;
