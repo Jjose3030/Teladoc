@@ -684,6 +684,7 @@ mark {
 }
 .grid-flex {
     align-self: center;
+    text-align: center;
 }
 .grid-flex h2 {
     color: var(--teladoc-primary);
@@ -1234,12 +1235,11 @@ h1 {
     }
     nav {
         position: fixed;
-        width: 99%;
-        margin: 0 5px;
         padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        margin: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
     #bars {
         display: block;
@@ -1331,7 +1331,8 @@ h1 {
     color: var(--teladoc-text);
 }
 .location {
-    width: 30%;
+    width: 50%;
+    text-align: center;
     margin: 0 auto;
 }
 .location h3 {
@@ -1361,13 +1362,13 @@ div.copy {
     width: 190px;
 }
 .item1 h2, .item2 h2, .item3 h2, .grid-flex h2, .item7 h2, .item8 h2 {
-     font-size: 1.5rem;
+     font-size: 1.6rem;
 }
  .item1 p, .item2 p, .item3 p, .grid-flex p, .item7 p, .item8 p, .item9 p {
         font-size: 20px;
 }
 .item1, .item2 , .item3, .grid-flex , .item7 , .item8 {
-        padding: 10px;   
+        padding: 20px;   
     }
 }
 @media (max-width: 930px) {
@@ -1617,6 +1618,7 @@ footer > p {
 }
 }
 @media (max-width:530px) {
+    
          .welcome {
         width: 100%;
         top: 95%;
