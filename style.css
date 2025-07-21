@@ -891,7 +891,6 @@ a.active {
 }
 .section5 {
     margin-top: 2rem;
-    margin-inline: 35px;
 }
 .section5 h2 {
     text-align: center;
@@ -900,10 +899,45 @@ a.active {
     color: var(--teladoc-text);
 }
 .slider {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: space-evenly;
-    gap: 20px;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.slide {
+     width: 150px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    animation: slide-in 35s linear infinite;
+}
+@keyframes slide-in {
+    to {
+        left: -160px;
+    }
+}
+.slid1 {
+    animation-delay: calc(35s / 8 * (8 - 1) * -1);
+}
+.slid2 {
+    animation-delay: calc(35s / 8 * (8 - 2) * -1);
+}
+.slid3 {
+    animation-delay: calc(35s / 8 * (8 - 3) * -1);
+}
+.slid4 {
+    animation-delay: calc(35s / 8 * (8 - 4) * -1);
+}
+.slid5 {
+    animation-delay: calc(35s / 8 * (8 - 5) * -1);
+}
+.slid6 {
+    animation-delay: calc(35s / 8 * (8 - 6) * -1);
+}
+.slid7 {
+    animation-delay: calc(35s / 8 * (8 - 7) * -1);
+}
+.slid8 {
+    animation-delay: calc(35s / 8 * (8 - 8) * -1);
 }
 .slide img {
     width: 100%;
@@ -1208,6 +1242,14 @@ h1 {
 .footin7 {
     grid-row: 2;
 }
+.slide {
+     width: 130px;
+}
+@keyframes slide-in {
+    to {
+        left: -140px;
+    }
+}
 }
 @media (max-width: 1111px) {
       header {
@@ -1389,6 +1431,14 @@ div.copy {
         transform: translate(-50%, -55%);
         gap: 15px;
     }
+    .slide {
+     width: 115px;
+}
+@keyframes slide-in {
+    to {
+        left: -120px;
+    }
+}
           .log1 span a {
         font-size: 18px;
         color: var(--teladoc-text);
@@ -1438,6 +1488,14 @@ div.copy {
     gap: 30px;
     flex-direction: row;
 }
+.slide {
+     width: 100px;
+}
+@keyframes slide-in {
+    to {
+        left: -120px;
+    }
+}
 }
 @media (max-width: 800px) {
        header {
@@ -1463,6 +1521,39 @@ div.copy {
         top: 70%;
         transform: translate(-50%, -70%);
     }
+    .slide {
+     width: 90px;
+    animation: slide-in 50s linear infinite;
+}
+@keyframes slide-in {
+    to {
+        left: -90px;
+    }
+}
+.slid1 {
+    animation-delay: calc(50s / 8 * (8 - 1) * -1);
+}
+.slid2 {
+    animation-delay: calc(50s / 8 * (8 - 2) * -1);
+}
+.slid3 {
+    animation-delay: calc(50s / 8 * (8 - 3) * -1);
+}
+.slid4 {
+    animation-delay: calc(50s / 8 * (8 - 4) * -1);
+}
+.slid5 {
+    animation-delay: calc(50s / 8 * (8 - 5) * -1);
+}
+.slid6 {
+    animation-delay: calc(50s / 8 * (8 - 6) * -1);
+}
+.slid7 {
+    animation-delay: calc(50s / 8 * (8 - 7) * -1);
+}
+.slid8 {
+    animation-delay: calc(50s / 8 * (8 - 8) * -1);
+}
 .item5 img  {
     width: 160px;
     object-fit: contain;
@@ -1686,5 +1777,13 @@ header {
 }
 .section3 {
     margin-inline: 15px;
+}
+.slide {
+     width: 58px;
+}
+@keyframes slide-in {
+    to {
+        left: -75px;
+    }
 }
 }
