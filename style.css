@@ -27,7 +27,7 @@
     padding-top: 10px;
  }
  nav {
-    background-color: white;
+    background-color: var(--teladoc-bg-light);
     display: flex;
     padding: 0 10px; 
     margin: 0 5px;
@@ -35,7 +35,7 @@
     position: sticky;
     border-radius: 15px;
     top: 0;
-    z-index: 22222;
+    z-index: 2222;
     border-bottom: 3px solid var(--dark-hover);
  }
  #bars {
@@ -277,8 +277,61 @@
     border-radius: 30px;
     border-bottom-right-radius: 30px;
  }
+ .sidebar {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 8888;
+    width: 100%;
+    height: 100vh;
+ }
+ .side-flex {
+    background-color: var(--teladoc-bg-light);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .side-items {
+    align-self: flex-start;
+    width: 100%;
+    padding-inline: 30px;
+ }
+
+ .side-items p {
+    margin-block: 20px;
+ }
+  p.can {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    color: var(--teladoc-primary);
+ }
+ p.can i {
+    font-size: 40px;
+ }
+ .side-items p a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--teladoc-text);
+ }
+ .side-button {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+ }
+ .side-button button {
+    width: 90%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    font-weight: 600;
+    color: var(--teladoc-bg-light);
+    background-color: var(--teladoc-primary);
+ }
  .para {
-      background-color: white;
+      background-color: var(--teladoc-bg-light);
       margin-block: 10px;
       padding: 10px;
       border-radius: 20px;
@@ -315,7 +368,7 @@
     color: var(--teladoc-primary);
 }
 .drop-card {
-    background-color: white;
+    background-color: var(--teladoc-bg-light);
     padding: 20px;
     border-radius: 30px;
 }
@@ -432,11 +485,6 @@ main {
 .main-cards > .cards:hover::after {
     left: 0;
 }
-
-/* .main-cards > .cards:hover {
-    
-    transition: 2s ease;
-} */
 
 .main-cards > .cards h3 {
     font-size: 2rem;
@@ -617,7 +665,7 @@ mark {
     align-items: center;
 }
 .item4 i, .item6 i {
-    color: white;
+    color: var(--teladoc-bg-light);
     font-size: 25px;
 }
 .item4:hover span, .item6:hover span{
@@ -800,7 +848,10 @@ mark {
 }
 
 .pagin i {
-  font-size: 25px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  font-size: 16px;
   background-color: var(--teladoc-bg-light);
   box-shadow: 0px 0px 4px var(--teladoc-text);
   padding: 10px;
@@ -812,7 +863,7 @@ mark {
   width: 25px;
   height: 25px;
 }
-.pagin i:hover {
+.pagin i:hover, .book i:hover {
     color: var(--teladoc-primary);
 }
 .page {
@@ -992,9 +1043,10 @@ div.copy {
     width: 150px;
 }
 .book {
-    background-color: var(--teladoc-text);
-    width: 45px;
-    height: 45px;
+      background-color: var(--teladoc-bg-light);
+  box-shadow: 0px 0px 4px var(--teladoc-text);
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1004,9 +1056,21 @@ div.copy {
     right: 20px;
     z-index: 333;
 }
+.book a {
+    text-decoration: none;
+}
 .book i {
-    color: var(--teladoc-bg-light);
-    font-size: 22px;
+    color: var(--teladoc-text);
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
 }
 
 @media (max-width: 1300px) {
@@ -1100,7 +1164,7 @@ h1 {
     margin-bottom: 10px;
 }
 .story-cards {
-    width: 350px;
+    width: 320px;
 }
 .pagin {
   margin: 15px auto;
